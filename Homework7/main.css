@@ -1,0 +1,17 @@
+div {
+  font-family: cursive;
+  color: yellow;
+}
+
+.myClass{
+  font-size: 32 px;
+  font-family: cursive;
+  color: yellow;
+}
+
+#myID{
+  font-size: 32 px;
+  font- family: fantasy;
+  color: red;
+  font-style: italic;
+}
