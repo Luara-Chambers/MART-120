@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Third Page</title>
+   <link rel="stylesheet" type="text/css" href="main.css">
+   <link rel="stylesheet" href="./styles/bootstrap-5.1.3/css/bootstrap.min.css">
+<script src="./styles/bootstrap-5.1.3/js/jquery-3.6.0.min.js"></script>
+<script src="./styles/bootstrap-5.1.3/js/bootstrap.min.js"></script>
+<script>
+ function checkboxes()
+ {
+  var firstName = document.getElementById("fName").value;
+  var lastName = document.getElementById("lName").value;
+  var email = document.getElementById("email").value;
+  if(firstName == "")
+  {
+    document.getElementById("fName").style.backgroundColor = "red";
+    document.getElementById("fName").focus();
+    document.getElementById("fNameMessage").innerHTML = " Required *";
+    document.getElementById("fNameMessage").style.color = "red";
+  }
+  if(lastName == "")
+  {
+    document.getElementById("lName").style.backgroundColor = "red";
+    document.getElementById("lName").focus();
+    document.getElementById("lNameMessage").innerHTML = " Required *";
+    document.getElementById("lNameMessage").style.color = "red";
+  }
+  if(email == "")
+  {
+    document.getElementById("email").style.backgroundColor = "red";
+    document.getElementById("email").focus();
+    document.getElementById("emailMessage").innerHTML = " Required *";
+    document.getElementById("emailMessage").style.color = "red";
+  }
+}
+</script>
+</head>
+<body>
+  <h3 style="font-family: 'Courier New', Courier, monospace; color: Red">Contact us by filling out the form below.</h3>
+    First Name: <input type="text" id="fName"><span id="fNameMessage"></span><br>
+    Last Name: <input type="text" id="lName"><span id="lNameMessage"></span><br>
+    Email: <input type="text" id="email"><span id="emailMessage"></span><br>
+   <h3 style="font-family: 'Courier New', Courier, monospace; color: Red">Accept terms of Agreement?</h3>
+   <input type="radio" name="yes" value="yes">Yes<br>
+   <button id="mySubmit" class="btn btn-primary" onclick='checkboxes();'>Submit</button>
+   <hr />
+   Here is a link to the <a href="index.html">First page</a>.
+   <br />
+   Here is a link to the <a href="secondpage.html">Second page</a>.
+ </body>
+ </html>
